@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'HJShareMenu_Example', :exclusive => true do
+  pod "HJShareMenu", :path => "../"
+end
+
+target 'HJShareMenu_Tests', :exclusive => true do
+  pod "HJShareMenu", :path => "../"
+
+  
+end
