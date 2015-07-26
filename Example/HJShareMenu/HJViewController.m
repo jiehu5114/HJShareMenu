@@ -8,9 +8,13 @@
 
 #import "HJViewController.h"
 
+#import <HJShareMenu/HJShareMenu.h>
+
 @interface HJViewController ()
 
 @end
+
+
 
 @implementation HJViewController
 
@@ -18,6 +22,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+//    UIActivityViewController
 }
 
 - (void)didReceiveMemoryWarning

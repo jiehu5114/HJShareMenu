@@ -1,0 +1,6 @@
+framework module HJShareMenu {
+  umbrella header "Pods-HJShareMenu_Example-HJShareMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

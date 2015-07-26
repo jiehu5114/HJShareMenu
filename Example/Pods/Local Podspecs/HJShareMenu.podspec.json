@@ -1,0 +1,23 @@
+{
+  "name": "HJShareMenu",
+  "version": "0.1.0",
+  "summary": "A short description of HJShareMenu.",
+  "description": "                       An optional longer description of HJShareMenu\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/jiehu5114/HJShareMenu",
+  "license": "MIT",
+  "authors": {
+    "hujie": "jiehu5114@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jiehu5114/HJShareMenu.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "http://jiehu5114.gitcafe.io/blog/archives/",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "resources": "Pod/HJShareMenu.bundle"
+}

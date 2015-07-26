@@ -1,0 +1,6 @@
+framework module Pods_HJShareMenu_Tests {
+  umbrella header "Pods-HJShareMenu_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

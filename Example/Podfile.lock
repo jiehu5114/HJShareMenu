@@ -1,0 +1,14 @@
+PODS:
+  - HJShareMenu (0.1.0)
+
+DEPENDENCIES:
+  - HJShareMenu (from `../`)
+
+EXTERNAL SOURCES:
+  HJShareMenu:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HJShareMenu: f5966efad514b5adb8a9b4ce566d97d48eec0603
+
+COCOAPODS: 0.37.2

@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0717A359BF8B64F8FDF80E43 /* HJShareMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB1DF52B3B1B893E2A5F97F /* HJShareMenuItemCell.m */; };
+		0D1114E034BA8E3FB2EE1A82 /* HJShareMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1C05FDA11F482D13A19AD /* HJShareMenuItem.m */; };
+		0E6A83861A3D4CEC1944FF4A /* HJShareMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = E932DFBC168EA263A817CA01 /* HJShareMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15987EE8D2B3436EA8FA633A /* Pods-HJShareMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF247B2A6607AB69BE1456 /* Pods-HJShareMenu_Tests-dummy.m */; };
+		2742F43FCECB54EAF2BE8983 /* Pods-HJShareMenu_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C30C5A20E5CD2B29AE947 /* Pods-HJShareMenu_Example-dummy.m */; };
+		34BCF081F60E44F5F4C8FFB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746910A1E49891947E703434 /* Foundation.framework */; };
+		3C23AB18DBA8144ECEC6D4D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746910A1E49891947E703434 /* Foundation.framework */; };
+		59D89AFAA9EF688C22514E26 /* HJShareMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = E932DFBC168EA263A817CA01 /* HJShareMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AA9DF0A961713898D1D2BE5 /* HJShareMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEE9AD138415AAA9BC9543F /* HJShareMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DCD2059E51F9DE7D0290DC /* HJShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 687E6C241363B9EF3DB8F6E5 /* HJShareMenu.m */; };
+		72BA403901FC73C9123AC0DE /* HJShareMenuPageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9CA9348494A03B60EF262A /* HJShareMenuPageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		856BB0A93BBA3CC7EEB02D66 /* HJShareMenuPageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9CA9348494A03B60EF262A /* HJShareMenuPageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		873FCBBC97239F3EE7560498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746910A1E49891947E703434 /* Foundation.framework */; };
+		88A4AD6AF007F3BC9513BABB /* HJShareMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7CEB73AA3EA614E2C933B10 /* HJShareMenu.bundle */; };
+		9487EA66C0042C59BDFFD208 /* HJShareMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB1DF52B3B1B893E2A5F97F /* HJShareMenuItemCell.m */; };
+		97A8C75478F6D2B6E9B7D1C3 /* HJShareMenuPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A28491E14214434EE7CB5D /* HJShareMenuPageCell.m */; };
+		B8CC595EB97872ECD2A460B1 /* Pods-HJShareMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B90DA549289F61352622EDC /* Pods-HJShareMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE29CA37708FB8A62458CA46 /* HJShareMenuPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A28491E14214434EE7CB5D /* HJShareMenuPageCell.m */; };
+		C240BE55FF90FCBF58EEF174 /* Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BDF26E82B1850ED1FF78513 /* Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C948CB7737BEB1411A3CD721 /* HJShareMenuItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9C75B037AF83049AAE6664 /* HJShareMenuItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D89B5A34C35EFA6D0F83402C /* HJShareMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7CEB73AA3EA614E2C933B10 /* HJShareMenu.bundle */; };
+		D980BFA26420A3BFB46DC972 /* Pods-HJShareMenu_Tests-HJShareMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A0E174F87C2099B7EADD /* Pods-HJShareMenu_Tests-HJShareMenu-dummy.m */; };
+		E0A97EC4A2C524EEE0323FF4 /* Pods-HJShareMenu_Example-HJShareMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B48DD1447708FB60E4A958 /* Pods-HJShareMenu_Example-HJShareMenu-dummy.m */; };
+		E142BD3A037C8CCA84E4ACA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746910A1E49891947E703434 /* Foundation.framework */; };
+		E308B9DD32DFF7D4E7068EF5 /* HJShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 687E6C241363B9EF3DB8F6E5 /* HJShareMenu.m */; };
+		F410B397A5CC141F2F3BEA36 /* Pods-HJShareMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A69C5406C18FE5CE3F4E44 /* Pods-HJShareMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5A83579D92925CF61E13A71 /* Pods-HJShareMenu_Example-HJShareMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 296014DD99F0E485D3963772 /* Pods-HJShareMenu_Example-HJShareMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B843BF969D2B7E3A8A46B /* HJShareMenuItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9C75B037AF83049AAE6664 /* HJShareMenuItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7FB1A4A070B876BB0DFA70 /* HJShareMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1C05FDA11F482D13A19AD /* HJShareMenuItem.m */; };
+		FF2E0D19C4066C260B63DFAF /* HJShareMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEE9AD138415AAA9BC9543F /* HJShareMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		403526AC17B2A2EB9EDBD4A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741B7E7315CEFA679BA9802F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF3EC39DFAEA145E089D7BDD;
+			remoteInfo = "Pods-HJShareMenu_Tests-HJShareMenu";
+		};
+		DCCE4980ED693C34301DABC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741B7E7315CEFA679BA9802F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E30E115C40CBFA3D8104B164;
+			remoteInfo = "Pods-HJShareMenu_Example-HJShareMenu";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6029018FAF31775DDDA11F /* Pods_HJShareMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJShareMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCE19555E1A475A5F7C4677 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0CCF247B2A6607AB69BE1456 /* Pods-HJShareMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJShareMenu_Tests-dummy.m"; sourceTree = "<group>"; };
+		0CE49F74B2F0505424C334BD /* Pods_HJShareMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJShareMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA1C05FDA11F482D13A19AD /* HJShareMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJShareMenuItem.m; sourceTree = "<group>"; };
+		13EC878FAEF3B7637E1EBDF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0D4C4D31EC3F4BB9942705 /* Pods-HJShareMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJShareMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1C576F646569C8549C155E37 /* Pods-HJShareMenu_Tests-HJShareMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-HJShareMenu_Tests-HJShareMenu.modulemap"; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu.modulemap"; sourceTree = "<group>"; };
+		1EB5426B6DD8C18156124920 /* Pods-HJShareMenu_Tests-HJShareMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-HJShareMenu_Tests-HJShareMenu-prefix.pch"; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu-prefix.pch"; sourceTree = "<group>"; };
+		27F9A0E174F87C2099B7EADD /* Pods-HJShareMenu_Tests-HJShareMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-HJShareMenu_Tests-HJShareMenu-dummy.m"; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu-dummy.m"; sourceTree = "<group>"; };
+		296014DD99F0E485D3963772 /* Pods-HJShareMenu_Example-HJShareMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJShareMenu_Example-HJShareMenu-umbrella.h"; sourceTree = "<group>"; };
+		2C9C75B037AF83049AAE6664 /* HJShareMenuItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJShareMenuItemCell.h; sourceTree = "<group>"; };
+		3096FDC5A66FC2ECC733C55A /* Pods-HJShareMenu_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJShareMenu_Example-resources.sh"; sourceTree = "<group>"; };
+		36A69C5406C18FE5CE3F4E44 /* Pods-HJShareMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJShareMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
+		44497CE8AD52F66AD6362DC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B76C57D1B07DFA487E53CA8 /* Pods-HJShareMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HJShareMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		551C30C5A20E5CD2B29AE947 /* Pods-HJShareMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJShareMenu_Example-dummy.m"; sourceTree = "<group>"; };
+		65D870DBDA32C47E3464775C /* Pods-HJShareMenu_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJShareMenu_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		687E6C241363B9EF3DB8F6E5 /* HJShareMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJShareMenu.m; sourceTree = "<group>"; };
+		6893DA0BE58EA0A758E49B44 /* Pods-HJShareMenu_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJShareMenu_Tests-environment.h"; sourceTree = "<group>"; };
+		6D9CA9348494A03B60EF262A /* HJShareMenuPageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJShareMenuPageCell.h; sourceTree = "<group>"; };
+		719612D566B32B0E6FF9F1C4 /* Pods-HJShareMenu_Example-HJShareMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJShareMenu_Example-HJShareMenu-prefix.pch"; sourceTree = "<group>"; };
+		721874CBA982E808EC84F7DE /* Pods-HJShareMenu_Tests-HJShareMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Tests-HJShareMenu.xcconfig"; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu.xcconfig"; sourceTree = "<group>"; };
+		72D563DB1CFD30F5E24989BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Info.plist"; sourceTree = "<group>"; };
+		746910A1E49891947E703434 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7504D9D6741EAC612B72D788 /* Pods-HJShareMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HJShareMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75EE5F2D28B7CFFDFC4F0923 /* Pods-HJShareMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJShareMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B90DA549289F61352622EDC /* Pods-HJShareMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJShareMenu_Example-umbrella.h"; sourceTree = "<group>"; };
+		7DDA768F047F3AC1B7056A03 /* Pods-HJShareMenu_Tests-HJShareMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Tests-HJShareMenu-Private.xcconfig"; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu-Private.xcconfig"; sourceTree = "<group>"; };
+		84B48DD1447708FB60E4A958 /* Pods-HJShareMenu_Example-HJShareMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJShareMenu_Example-HJShareMenu-dummy.m"; sourceTree = "<group>"; };
+		8BDF26E82B1850ED1FF78513 /* Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h"; path = "../Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h"; sourceTree = "<group>"; };
+		A07B2C371E2459E148FA0A0E /* Pods-HJShareMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJShareMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A7CEB73AA3EA614E2C933B10 /* HJShareMenu.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = HJShareMenu.bundle; sourceTree = "<group>"; };
+		B0A28491E14214434EE7CB5D /* HJShareMenuPageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJShareMenuPageCell.m; sourceTree = "<group>"; };
+		B44DE1500E0F88CED48D9C34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEE9AD138415AAA9BC9543F /* HJShareMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJShareMenuItem.h; sourceTree = "<group>"; };
+		BEB1DF52B3B1B893E2A5F97F /* HJShareMenuItemCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJShareMenuItemCell.m; sourceTree = "<group>"; };
+		C09A03E4E40C4FFA5ABF3697 /* Pods-HJShareMenu_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJShareMenu_Tests-resources.sh"; sourceTree = "<group>"; };
+		C153FB7FC512F976D15EB184 /* Pods-HJShareMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HJShareMenu_Tests.modulemap"; sourceTree = "<group>"; };
+		C28F562C3E57FDA619A5540E /* Pods-HJShareMenu_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJShareMenu_Example-environment.h"; sourceTree = "<group>"; };
+		C7DC4CA017D65B7D1563C7C8 /* Pods-HJShareMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HJShareMenu_Example.modulemap"; sourceTree = "<group>"; };
+		CBB37DF07E12F6E5ED91377E /* Pods-HJShareMenu_Example-HJShareMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJShareMenu_Example-HJShareMenu.xcconfig"; sourceTree = "<group>"; };
+		D016EEE04A41FF703D3127F4 /* Pods-HJShareMenu_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJShareMenu_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D08413D7AC6EBF1D252AF354 /* HJShareMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HJShareMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64E2BCDC0B64100F527544A /* HJShareMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HJShareMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E65A0DAF9CE676CCF6CF85 /* Pods-HJShareMenu_Example-HJShareMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HJShareMenu_Example-HJShareMenu.modulemap"; sourceTree = "<group>"; };
+		DCF650F93930FB0CF85A7F66 /* Pods-HJShareMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HJShareMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E932DFBC168EA263A817CA01 /* HJShareMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJShareMenu.h; sourceTree = "<group>"; };
+		E9384ED614C5ADF445CA7FF3 /* Pods-HJShareMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HJShareMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF4900384FF7123FA7E51DA0 /* Pods-HJShareMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJShareMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FC680310DD5170AB59AC0BFD /* Pods-HJShareMenu_Example-HJShareMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJShareMenu_Example-HJShareMenu-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		347E64491454717CB7BC6478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C23AB18DBA8144ECEC6D4D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F60FC2223C08DE4891DD6C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E142BD3A037C8CCA84E4ACA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B94E0F8CDD368372776423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BCF081F60E44F5F4C8FFB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BBEF26F8A4F755806D25F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873FCBBC97239F3EE7560498 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25204BBB556DEEEF3822528B = {
+			isa = PBXGroup;
+			children = (
+				0CCE19555E1A475A5F7C4677 /* Podfile */,
+				D5428964091F72F946A80982 /* Development Pods */,
+				B4192BA420B680409FBA0ECB /* Frameworks */,
+				6F9D3F100233217012BDDD31 /* Products */,
+				766D040EC7E860F0876BDEB9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3465EA5D7C2C96B08284AA91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B2317224C2A5766A14AD8 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3AEAA2578A2AA2183A523653 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E932DFBC168EA263A817CA01 /* HJShareMenu.h */,
+				687E6C241363B9EF3DB8F6E5 /* HJShareMenu.m */,
+				BAEE9AD138415AAA9BC9543F /* HJShareMenuItem.h */,
+				0DA1C05FDA11F482D13A19AD /* HJShareMenuItem.m */,
+				2C9C75B037AF83049AAE6664 /* HJShareMenuItemCell.h */,
+				BEB1DF52B3B1B893E2A5F97F /* HJShareMenuItemCell.m */,
+				6D9CA9348494A03B60EF262A /* HJShareMenuPageCell.h */,
+				B0A28491E14214434EE7CB5D /* HJShareMenuPageCell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3C68997ABF9B4B579FA6B0EE /* Pods-HJShareMenu_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B44DE1500E0F88CED48D9C34 /* Info.plist */,
+				C153FB7FC512F976D15EB184 /* Pods-HJShareMenu_Tests.modulemap */,
+				E9384ED614C5ADF445CA7FF3 /* Pods-HJShareMenu_Tests-acknowledgements.markdown */,
+				DCF650F93930FB0CF85A7F66 /* Pods-HJShareMenu_Tests-acknowledgements.plist */,
+				0CCF247B2A6607AB69BE1456 /* Pods-HJShareMenu_Tests-dummy.m */,
+				6893DA0BE58EA0A758E49B44 /* Pods-HJShareMenu_Tests-environment.h */,
+				65D870DBDA32C47E3464775C /* Pods-HJShareMenu_Tests-frameworks.sh */,
+				C09A03E4E40C4FFA5ABF3697 /* Pods-HJShareMenu_Tests-resources.sh */,
+				36A69C5406C18FE5CE3F4E44 /* Pods-HJShareMenu_Tests-umbrella.h */,
+				75EE5F2D28B7CFFDFC4F0923 /* Pods-HJShareMenu_Tests.debug.xcconfig */,
+				A07B2C371E2459E148FA0A0E /* Pods-HJShareMenu_Tests.release.xcconfig */,
+			);
+			name = "Pods-HJShareMenu_Tests";
+			path = "Target Support Files/Pods-HJShareMenu_Tests";
+			sourceTree = "<group>";
+		};
+		47EEE3A36ACA68B86D9891F4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				746910A1E49891947E703434 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4E09E7CFC74C4AD360BB02B2 /* HJShareMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7DF6ED047AAE041DEAA88 /* Pod */,
+				3465EA5D7C2C96B08284AA91 /* Resources */,
+				50220CD7AC733C6BABE319CE /* Support Files */,
+			);
+			name = HJShareMenu;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		50220CD7AC733C6BABE319CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44497CE8AD52F66AD6362DC1 /* Info.plist */,
+				72D563DB1CFD30F5E24989BE /* Info.plist */,
+				D6E65A0DAF9CE676CCF6CF85 /* Pods-HJShareMenu_Example-HJShareMenu.modulemap */,
+				CBB37DF07E12F6E5ED91377E /* Pods-HJShareMenu_Example-HJShareMenu.xcconfig */,
+				FC680310DD5170AB59AC0BFD /* Pods-HJShareMenu_Example-HJShareMenu-Private.xcconfig */,
+				84B48DD1447708FB60E4A958 /* Pods-HJShareMenu_Example-HJShareMenu-dummy.m */,
+				719612D566B32B0E6FF9F1C4 /* Pods-HJShareMenu_Example-HJShareMenu-prefix.pch */,
+				296014DD99F0E485D3963772 /* Pods-HJShareMenu_Example-HJShareMenu-umbrella.h */,
+				1C576F646569C8549C155E37 /* Pods-HJShareMenu_Tests-HJShareMenu.modulemap */,
+				721874CBA982E808EC84F7DE /* Pods-HJShareMenu_Tests-HJShareMenu.xcconfig */,
+				7DDA768F047F3AC1B7056A03 /* Pods-HJShareMenu_Tests-HJShareMenu-Private.xcconfig */,
+				27F9A0E174F87C2099B7EADD /* Pods-HJShareMenu_Tests-HJShareMenu-dummy.m */,
+				1EB5426B6DD8C18156124920 /* Pods-HJShareMenu_Tests-HJShareMenu-prefix.pch */,
+				8BDF26E82B1850ED1FF78513 /* Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-HJShareMenu_Example-HJShareMenu";
+			sourceTree = "<group>";
+		};
+		5F0B2317224C2A5766A14AD8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A7CEB73AA3EA614E2C933B10 /* HJShareMenu.bundle */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		6F9D3F100233217012BDDD31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D64E2BCDC0B64100F527544A /* HJShareMenu.framework */,
+				D08413D7AC6EBF1D252AF354 /* HJShareMenu.framework */,
+				0A6029018FAF31775DDDA11F /* Pods_HJShareMenu_Example.framework */,
+				0CE49F74B2F0505424C334BD /* Pods_HJShareMenu_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		766D040EC7E860F0876BDEB9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8E99AA586911902D8509ECE /* Pods-HJShareMenu_Example */,
+				3C68997ABF9B4B579FA6B0EE /* Pods-HJShareMenu_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B4192BA420B680409FBA0ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47EEE3A36ACA68B86D9891F4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8E99AA586911902D8509ECE /* Pods-HJShareMenu_Example */ = {
+			isa = PBXGroup;
+			children = (
+				13EC878FAEF3B7637E1EBDF1 /* Info.plist */,
+				C7DC4CA017D65B7D1563C7C8 /* Pods-HJShareMenu_Example.modulemap */,
+				7504D9D6741EAC612B72D788 /* Pods-HJShareMenu_Example-acknowledgements.markdown */,
+				4B76C57D1B07DFA487E53CA8 /* Pods-HJShareMenu_Example-acknowledgements.plist */,
+				551C30C5A20E5CD2B29AE947 /* Pods-HJShareMenu_Example-dummy.m */,
+				C28F562C3E57FDA619A5540E /* Pods-HJShareMenu_Example-environment.h */,
+				D016EEE04A41FF703D3127F4 /* Pods-HJShareMenu_Example-frameworks.sh */,
+				3096FDC5A66FC2ECC733C55A /* Pods-HJShareMenu_Example-resources.sh */,
+				7B90DA549289F61352622EDC /* Pods-HJShareMenu_Example-umbrella.h */,
+				1C0D4C4D31EC3F4BB9942705 /* Pods-HJShareMenu_Example.debug.xcconfig */,
+				EF4900384FF7123FA7E51DA0 /* Pods-HJShareMenu_Example.release.xcconfig */,
+			);
+			name = "Pods-HJShareMenu_Example";
+			path = "Target Support Files/Pods-HJShareMenu_Example";
+			sourceTree = "<group>";
+		};
+		D5428964091F72F946A80982 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E09E7CFC74C4AD360BB02B2 /* HJShareMenu */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FAC7DF6ED047AAE041DEAA88 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3AEAA2578A2AA2183A523653 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2FC573C65DE37CD1D2A1B210 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F410B397A5CC141F2F3BEA36 /* Pods-HJShareMenu_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DC98A11BEE68641AF25502 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6A83861A3D4CEC1944FF4A /* HJShareMenu.h in Headers */,
+				5AA9DF0A961713898D1D2BE5 /* HJShareMenuItem.h in Headers */,
+				C948CB7737BEB1411A3CD721 /* HJShareMenuItemCell.h in Headers */,
+				72BA403901FC73C9123AC0DE /* HJShareMenuPageCell.h in Headers */,
+				F5A83579D92925CF61E13A71 /* Pods-HJShareMenu_Example-HJShareMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78D96003525EB50F0AEAD9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CC595EB97872ECD2A460B1 /* Pods-HJShareMenu_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA29E837EEAB8C7D4A8135A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D89AFAA9EF688C22514E26 /* HJShareMenu.h in Headers */,
+				FF2E0D19C4066C260B63DFAF /* HJShareMenuItem.h in Headers */,
+				FA4B843BF969D2B7E3A8A46B /* HJShareMenuItemCell.h in Headers */,
+				856BB0A93BBA3CC7EEB02D66 /* HJShareMenuPageCell.h in Headers */,
+				C240BE55FF90FCBF58EEF174 /* Pods-HJShareMenu_Tests-HJShareMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BED90B68D6425578229F249 /* Pods-HJShareMenu_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F58F529D315088316CB3C573 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Tests" */;
+			buildPhases = (
+				011B30BA997B4C8973895934 /* Sources */,
+				347E64491454717CB7BC6478 /* Frameworks */,
+				2FC573C65DE37CD1D2A1B210 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE7FFD1C3F6F789A58D3310 /* PBXTargetDependency */,
+			);
+			name = "Pods-HJShareMenu_Tests";
+			productName = "Pods-HJShareMenu_Tests";
+			productReference = 0CE49F74B2F0505424C334BD /* Pods_HJShareMenu_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77E0AB792F87B5A3CE9939F1 /* Pods-HJShareMenu_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38A319A3D7AF5B9CF3FB9476 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Example" */;
+			buildPhases = (
+				8C13778BFFCE82CB667913A0 /* Sources */,
+				96B94E0F8CDD368372776423 /* Frameworks */,
+				A78D96003525EB50F0AEAD9A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F615466D6C846EB6258A6E3 /* PBXTargetDependency */,
+			);
+			name = "Pods-HJShareMenu_Example";
+			productName = "Pods-HJShareMenu_Example";
+			productReference = 0A6029018FAF31775DDDA11F /* Pods_HJShareMenu_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E30E115C40CBFA3D8104B164 /* Pods-HJShareMenu_Example-HJShareMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA2FAB6F7C240AE5001A4898 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Example-HJShareMenu" */;
+			buildPhases = (
+				3A71A3F87140404755ABFD91 /* Sources */,
+				3F60FC2223C08DE4891DD6C6 /* Frameworks */,
+				87DC98A11BEE68641AF25502 /* Headers */,
+				F11525BC6B1BEBD358E86E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HJShareMenu_Example-HJShareMenu";
+			productName = "Pods-HJShareMenu_Example-HJShareMenu";
+			productReference = D64E2BCDC0B64100F527544A /* HJShareMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF3EC39DFAEA145E089D7BDD /* Pods-HJShareMenu_Tests-HJShareMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FEEAD60B7BA79E59176E5D7 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Tests-HJShareMenu" */;
+			buildPhases = (
+				AECD5F8D198AD11709325FD0 /* Sources */,
+				B6BBEF26F8A4F755806D25F4 /* Frameworks */,
+				AA29E837EEAB8C7D4A8135A4 /* Headers */,
+				EFF6BB4B3C45A2AFEB13731F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HJShareMenu_Tests-HJShareMenu";
+			productName = "Pods-HJShareMenu_Tests-HJShareMenu";
+			productReference = D08413D7AC6EBF1D252AF354 /* HJShareMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741B7E7315CEFA679BA9802F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = C008BA23D2CA59AE44C39810 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25204BBB556DEEEF3822528B;
+			productRefGroup = 6F9D3F100233217012BDDD31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77E0AB792F87B5A3CE9939F1 /* Pods-HJShareMenu_Example */,
+				E30E115C40CBFA3D8104B164 /* Pods-HJShareMenu_Example-HJShareMenu */,
+				6BED90B68D6425578229F249 /* Pods-HJShareMenu_Tests */,
+				FF3EC39DFAEA145E089D7BDD /* Pods-HJShareMenu_Tests-HJShareMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFF6BB4B3C45A2AFEB13731F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89B5A34C35EFA6D0F83402C /* HJShareMenu.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11525BC6B1BEBD358E86E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A4AD6AF007F3BC9513BABB /* HJShareMenu.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011B30BA997B4C8973895934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15987EE8D2B3436EA8FA633A /* Pods-HJShareMenu_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A71A3F87140404755ABFD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DCD2059E51F9DE7D0290DC /* HJShareMenu.m in Sources */,
+				FE7FB1A4A070B876BB0DFA70 /* HJShareMenuItem.m in Sources */,
+				9487EA66C0042C59BDFFD208 /* HJShareMenuItemCell.m in Sources */,
+				97A8C75478F6D2B6E9B7D1C3 /* HJShareMenuPageCell.m in Sources */,
+				E0A97EC4A2C524EEE0323FF4 /* Pods-HJShareMenu_Example-HJShareMenu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C13778BFFCE82CB667913A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2742F43FCECB54EAF2BE8983 /* Pods-HJShareMenu_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECD5F8D198AD11709325FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E308B9DD32DFF7D4E7068EF5 /* HJShareMenu.m in Sources */,
+				0D1114E034BA8E3FB2EE1A82 /* HJShareMenuItem.m in Sources */,
+				0717A359BF8B64F8FDF80E43 /* HJShareMenuItemCell.m in Sources */,
+				BE29CA37708FB8A62458CA46 /* HJShareMenuPageCell.m in Sources */,
+				D980BFA26420A3BFB46DC972 /* Pods-HJShareMenu_Tests-HJShareMenu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F615466D6C846EB6258A6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HJShareMenu_Example-HJShareMenu";
+			target = E30E115C40CBFA3D8104B164 /* Pods-HJShareMenu_Example-HJShareMenu */;
+			targetProxy = DCCE4980ED693C34301DABC0 /* PBXContainerItemProxy */;
+		};
+		CEE7FFD1C3F6F789A58D3310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HJShareMenu_Tests-HJShareMenu";
+			target = FF3EC39DFAEA145E089D7BDD /* Pods-HJShareMenu_Tests-HJShareMenu */;
+			targetProxy = 403526AC17B2A2EB9EDBD4A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03EFDCB57D4391DDFEE1C79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC680310DD5170AB59AC0BFD /* Pods-HJShareMenu_Example-HJShareMenu-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HJShareMenu_Example-HJShareMenu/Pods-HJShareMenu_Example-HJShareMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Example-HJShareMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Example-HJShareMenu/Pods-HJShareMenu_Example-HJShareMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HJShareMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0E2EC911485D1F0E3B704334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07B2C371E2459E148FA0A0E /* Pods-HJShareMenu_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Tests/Pods-HJShareMenu_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HJShareMenu_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		147C922D840A81ACE594DC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39D66F6668D11464A107357A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDA768F047F3AC1B7056A03 /* Pods-HJShareMenu_Tests-HJShareMenu-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Tests-HJShareMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HJShareMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72F1F85A4A298BF19F30FBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7FC29691B6AF6ADC9A0DA3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4900384FF7123FA7E51DA0 /* Pods-HJShareMenu_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Example/Pods-HJShareMenu_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HJShareMenu_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		913B2F61CA31A43A1A27699B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0D4C4D31EC3F4BB9942705 /* Pods-HJShareMenu_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Example/Pods-HJShareMenu_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HJShareMenu_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91E525A4FC249F94287CAD85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC680310DD5170AB59AC0BFD /* Pods-HJShareMenu_Example-HJShareMenu-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HJShareMenu_Example-HJShareMenu/Pods-HJShareMenu_Example-HJShareMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Example-HJShareMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Example-HJShareMenu/Pods-HJShareMenu_Example-HJShareMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HJShareMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB155D179C1882BBA58A6F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EE5F2D28B7CFFDFC4F0923 /* Pods-HJShareMenu_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Tests/Pods-HJShareMenu_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_HJShareMenu_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C47B22CCE503D97577B204C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDA768F047F3AC1B7056A03 /* Pods-HJShareMenu_Tests-HJShareMenu-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-HJShareMenu_Tests-HJShareMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-HJShareMenu_Tests-HJShareMenu/Pods-HJShareMenu_Tests-HJShareMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HJShareMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38A319A3D7AF5B9CF3FB9476 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913B2F61CA31A43A1A27699B /* Debug */,
+				7FC29691B6AF6ADC9A0DA3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FEEAD60B7BA79E59176E5D7 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Tests-HJShareMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47B22CCE503D97577B204C9 /* Debug */,
+				39D66F6668D11464A107357A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA2FAB6F7C240AE5001A4898 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Example-HJShareMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EFDCB57D4391DDFEE1C79E /* Debug */,
+				91E525A4FC249F94287CAD85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C008BA23D2CA59AE44C39810 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F1F85A4A298BF19F30FBA2 /* Debug */,
+				147C922D840A81ACE594DC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F58F529D315088316CB3C573 /* Build configuration list for PBXNativeTarget "Pods-HJShareMenu_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB155D179C1882BBA58A6F7E /* Debug */,
+				0E2EC911485D1F0E3B704334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 741B7E7315CEFA679BA9802F /* Project object */;
+}
