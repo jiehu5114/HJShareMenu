@@ -11,7 +11,15 @@
 
 
 
-#define kHJShareMenuBundlePath  ([[[NSBundle bundleForClass:[HJShareMenu class]] bundlePath] stringByAppendingPathComponent:@"HJShareMenu.bundle"])
+#define kHJShareMenuBundlePath  \
+([[[NSBundle bundleForClass:[HJShareMenu class]] bundlePath] stringByAppendingPathComponent:@"HJShareMenu.bundle"])
+
+
+#define kHJShareMenuBundle  \
+([NSBundle bundleWithPath:[[[NSBundle bundleForClass:[HJShareMenu class]] bundlePath] stringByAppendingPathComponent:@"HJShareMenu.bundle"]])
+
+#define kHJShareMenuLocalizedStrings(key)  \
+(NSLocalizedStringFromTableInBundle(key, @"HJShareMenu", kHJShareMenuBundle, nil))
 
 
 #endif

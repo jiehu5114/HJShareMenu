@@ -41,6 +41,13 @@ static const NSInteger kMenuLabelTextColor = 0x646464;
                                                                  options:0
                                                                  metrics:metrics
                                                                    views:viewsDic]];
+    
+    NSString *vflH = @"H:|-2-[_menuLabel]-2-|";
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vflH
+                                                                             options:0
+                                                                             metrics:metrics
+                                                                               views:viewsDic]];
+    
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.contentView
                                                                  attribute:NSLayoutAttributeCenterX
                                                                  relatedBy:NSLayoutRelationEqual
@@ -56,6 +63,9 @@ static const NSInteger kMenuLabelTextColor = 0x646464;
                                                                  attribute:NSLayoutAttributeCenterX
                                                                 multiplier:1
                                                                   constant:0]];
+    
+    
+    
 }
 
 

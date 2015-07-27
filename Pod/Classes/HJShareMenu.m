@@ -150,8 +150,6 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 }
 
 
-
-
 #pragma mark  - Life Cycle
 - (void) buildLayout
 {
@@ -276,20 +274,15 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 - (void)setMenuMode:(HJShareMenuMode)menuMode
 {
     _menuMode = menuMode;
-    
     if (menuMode == SingleLineMode) {
-        //单行模式
         self.pageViewHeight = 130.0;
     }
     else {
-        self.pageViewHeight = 250.0;
-        
+        self.pageViewHeight = 260.0;
         if (menuMode == SinglePageMode) {
-            //单页模式
             self.pageControl.hidden = YES;
         }
         else if (menuMode == MultiPageMode) {
-            //多页模式
             self.pageControl.numberOfPages =  self.menuItems.count/6 +1;
         }
     }
@@ -351,9 +344,7 @@ static const CGFloat kCancelButtonHeight          = 45.0;
     if (!_cancelButton) {
         
         _cancelButton  = [[UIButton alloc] init];
-        // TODO: 国际化
-        [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-        
+        [_cancelButton setTitle:kHJShareMenuLocalizedStrings(@"cancel") forState:UIControlStateNormal];
         [_cancelButton setTitleColor:[UIColor colorWithRed:((float)((kCancelButtonTextColor & 0xFF0000) >> 16)) / 255.0
                                                      green:((float)((kCancelButtonTextColor & 0xFF00) >> 8)) / 255.0
                                                       blue:((float)(kCancelButtonTextColor & 0xFF)) / 255.0 alpha:1] forState:UIControlStateNormal];
