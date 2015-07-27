@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF3EC39DFAEA145E089D7BDD"
+               BlueprintIdentifier = "0A6A43E500420E4A44EB5A24"
                BuildableName = "HJShareMenu.framework"
                BlueprintName = "Pods-HJShareMenu_Tests-HJShareMenu"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+//Constants
+#import "HJShareMenuConstants.h"
+
 //Model
 #import "HJShareMenuItem.h"
+
 
 
 @class HJShareMenu;
@@ -19,6 +24,8 @@
 - (void)hj_shareMenu:(HJShareMenu *)shareMenu selectedAtIndex:(NSInteger)index;
 
 @end
+
+
 
 
 @interface HJShareMenu : UIView

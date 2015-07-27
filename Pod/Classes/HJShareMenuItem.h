@@ -10,4 +10,8 @@
 
 @interface HJShareMenuItem : NSObject
 
+@property (nonatomic, strong) UIImage *menuItemImage;
+
+@property (nonatomic, copy) NSString *menuItemTitle;
+
 @end
