@@ -10,13 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "HJShareMenu"
   s.version          = "0.1.0"
-  s.summary          = "A short description of HJShareMenu."
-  s.description      = <<-DESC
-                       An optional longer description of HJShareMenu
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "A Share Menu"
   s.homepage         = "https://github.com/jiehu5114/HJShareMenu"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'

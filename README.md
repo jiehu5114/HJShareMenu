@@ -1,10 +1,5 @@
 # HJShareMenu
 
-[![CI Status](http://img.shields.io/travis/hujie/HJShareMenu.svg?style=flat)](https://travis-ci.org/hujie/HJShareMenu)
-[![Version](https://img.shields.io/cocoapods/v/HJShareMenu.svg?style=flat)](http://cocoapods.org/pods/HJShareMenu)
-[![License](https://img.shields.io/cocoapods/l/HJShareMenu.svg?style=flat)](http://cocoapods.org/pods/HJShareMenu)
-[![Platform](https://img.shields.io/cocoapods/p/HJShareMenu.svg?style=flat)](http://cocoapods.org/pods/HJShareMenu)
-
 ![iOS7 and later](images/ShareMenu.gif)
 
 
@@ -48,13 +43,10 @@ shareMenu.delegate = self;
 
 ```
 
-
-
 ## Requirements
 
 * Deployment Target iOS7.0+
-
-
+* ARC
 
 
 ## License
