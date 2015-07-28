@@ -5,11 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/HJShareMenu.svg?style=flat)](http://cocoapods.org/pods/HJShareMenu)
 [![Platform](https://img.shields.io/cocoapods/p/HJShareMenu.svg?style=flat)](http://cocoapods.org/pods/HJShareMenu)
 
-## Usage
+![iOS7 and later](images/ShareMenu.gif)
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -19,10 +16,46 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "HJShareMenu"
 ```
+ 
+## Usage
 
-## Author
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-hujie, jiehu5114@qq.com
+In your Project ,import HJShareMenu and implement HJShareMenuDelegate.
+
+
+```Objc
+HJShareMenuItem *mail = [[HJShareMenuItem alloc] init];
+mail.menuItemTitle = kHJShareMenuLocalizedStrings(@"Mail");
+mail.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMail.png"]];
+
+HJShareMenuItem *message = [[HJShareMenuItem alloc] init];
+message.menuItemTitle = kHJShareMenuLocalizedStrings(@"Message");
+message.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMessage.png"]];
+
+HJShareMenuItem *photos = [[HJShareMenuItem alloc] init];
+photos.menuItemTitle = kHJShareMenuLocalizedStrings(@"Save to Camera Roll");
+photos.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"sharePhotos.png"]];
+
+HJShareMenuItem *safari = [[HJShareMenuItem alloc] init];
+safari.menuItemTitle = kHJShareMenuLocalizedStrings(@"Open in Safari");
+safari.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareSafari.png"]];
+
+
+HJShareMenu *shareMenu = [[HJShareMenu alloc] initWithMenuItems:[NSMutableArray arrayWithObjects:mail,message,photos,safari,nil]];
+shareMenu.delegate = self;
+[shareMenu showMenu];
+
+```
+
+
+
+## Requirements
+
+* Deployment Target iOS7.0+
+
+
+
 
 ## License
 

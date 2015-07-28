@@ -79,6 +79,8 @@
     HJShareMenu *shareMenu = [[HJShareMenu alloc] initWithMenuItems:[self.menuItems subarrayWithRange:NSMakeRange(0, 3)]];
     shareMenu.delegate = self;
     [shareMenu showMenu];
+    
+    
 }
 
 - (IBAction)moreThanThree:(id)sender {
