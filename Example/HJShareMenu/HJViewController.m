@@ -11,8 +11,11 @@
 #import <HJShareMenu/HJShareMenu.h>
 
 
-
 @interface HJViewController ()<HJShareMenuDelegate>
+
+
+@property (nonatomic, strong)NSMutableArray *menuItems;
+
 
 @end
 
@@ -23,15 +26,73 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-//    UIActivityViewController
+    HJShareMenuItem *mail = [[HJShareMenuItem alloc] init];
+    mail.menuItemTitle = kHJShareMenuLocalizedStrings(@"Mail");
+    mail.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMail.png"]];
+    
+    HJShareMenuItem *message = [[HJShareMenuItem alloc] init];
+    message.menuItemTitle = kHJShareMenuLocalizedStrings(@"Message");
+    message.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMessage.png"]];
+    
+    HJShareMenuItem *photos = [[HJShareMenuItem alloc] init];
+    photos.menuItemTitle = kHJShareMenuLocalizedStrings(@"Save to Camera Roll");
+    photos.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"sharePhotos.png"]];
+    
+    HJShareMenuItem *safari = [[HJShareMenuItem alloc] init];
+    safari.menuItemTitle = kHJShareMenuLocalizedStrings(@"Open in Safari");
+    safari.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareSafari.png"]];
+    
+    HJShareMenuItem *weibo = [[HJShareMenuItem alloc] init];
+    weibo.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Sina Weibo");
+    weibo.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareWeibo.png"]];
+    
+    
+    HJShareMenuItem *faceBook = [[HJShareMenuItem alloc] init];
+    faceBook.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Facebook");
+    faceBook.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareFacebook.png"]];
+    
+    HJShareMenuItem *twitter = [[HJShareMenuItem alloc] init];
+    twitter.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Twitter");
+    twitter.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareTwitter.png"]];
+    
+    /*custom Menu Item*/
+    
+    HJShareMenuItem *custom1 = [[HJShareMenuItem alloc] init];
+    custom1.menuItemTitle = @"custom1";
+    custom1.menuItemImage = [UIImage imageNamed:@"custom1.png"];
+    
+    HJShareMenuItem *custom2 = [[HJShareMenuItem alloc] init];
+    custom2.menuItemTitle = @"custom2";
+    custom2.menuItemImage = [UIImage imageNamed:@"custom2.png"];
+    
+    HJShareMenuItem *custom3 = [[HJShareMenuItem alloc] init];
+    custom3.menuItemTitle = @"custom3";
+    custom3.menuItemImage = [UIImage imageNamed:@"custom3.png"];
+    
+    self.menuItems = [NSMutableArray arrayWithObjects:mail,message,photos,safari,weibo,faceBook,twitter,custom1,custom2,custom3, nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)lessThree:(id)sender {
+    
+    HJShareMenu *shareMenu = [[HJShareMenu alloc] initWithMenuItems:[self.menuItems subarrayWithRange:NSMakeRange(0, 3)]];
+    shareMenu.delegate = self;
+    [shareMenu showMenu];
+}
+
+- (IBAction)moreThanThree:(id)sender {
+    
+    HJShareMenu *shareMenu = [[HJShareMenu alloc] initWithMenuItems:[self.menuItems subarrayWithRange:NSMakeRange(0, 5)]];
+    shareMenu.delegate = self;
+    [shareMenu showMenu];
+}
+
+- (IBAction)moreThanSix:(id)sender {
+    
+    HJShareMenu *shareMenu = [[HJShareMenu alloc] initWithMenuItems:self.menuItems];
+    shareMenu.delegate = self;
+    [shareMenu showMenu];
 }
 
 #pragma mark - HJShareMenuDelegate
@@ -40,42 +101,6 @@
     NSLog(@"选中：%ld",index);
     
 }
-
-- (IBAction)buttonClick:(id)sender {
-    
-    HJShareMenuItem *menuItem1 = [[HJShareMenuItem alloc] init];
-    menuItem1.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Mail");
-    menuItem1.menuItemImage  = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMail.png"]];
-    
-    HJShareMenuItem *menuItem2 = [[HJShareMenuItem alloc] init];
-    menuItem2.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Message");
-    menuItem2.menuItemImage =[UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMessage.png"]];
-    
-    HJShareMenuItem *menuItem3 = [[HJShareMenuItem alloc] init];
-    menuItem3.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Save to Camera Roll");
-    menuItem3.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"sharePhotos.png"]];
-    
-    HJShareMenuItem *menuItem4 = [[HJShareMenuItem alloc] init];
-    menuItem4.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Sina Weibo");
-    menuItem4.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareWeibo.png"]];
-    
-    HJShareMenuItem *menuItem5 = [[HJShareMenuItem alloc] init];
-    menuItem5.menuItemTitle  = kHJShareMenuLocalizedStrings(@"Open in Safari");
-    menuItem5.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareSafari.png"]];
-    
-    
-    
-    
-    
-    HJShareMenu *shareMenu = [[HJShareMenu alloc] initWithMenuItems:[NSArray arrayWithObjects:menuItem1,menuItem2,menuItem3,
-                                                                     menuItem4,menuItem5,menuItem2,
-                                                                     menuItem1,nil]];
-    shareMenu.delegate = self;
-    [shareMenu showMenu];
-}
-
-
-
 
 
 @end

@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HJShareMenu: f5966efad514b5adb8a9b4ce566d97d48eec0603
+  HJShareMenu: 6e96858c827572e6eace8c1722bf4f4303dc9405
 
 COCOAPODS: 0.37.2

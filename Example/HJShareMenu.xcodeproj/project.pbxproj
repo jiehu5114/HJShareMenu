@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260634861B677CE3004C15C3 /* custom1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260634811B677CE3004C15C3 /* custom1@2x.png */; };
+		260634871B677CE3004C15C3 /* custom2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260634821B677CE3004C15C3 /* custom2@2x.png */; };
+		260634881B677CE3004C15C3 /* custom3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260634831B677CE3004C15C3 /* custom3@2x.png */; };
+		260634891B677CE3004C15C3 /* custom4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260634841B677CE3004C15C3 /* custom4@2x.png */; };
+		2606348A1B677CE3004C15C3 /* custom5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 260634851B677CE3004C15C3 /* custom5@2x.png */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +42,11 @@
 /* Begin PBXFileReference section */
 		011299C275F257F181820354 /* Pods_HJShareMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJShareMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03690A370203F9FE50BD9595 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		260634811B677CE3004C15C3 /* custom1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom1@2x.png"; sourceTree = "<group>"; };
+		260634821B677CE3004C15C3 /* custom2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom2@2x.png"; sourceTree = "<group>"; };
+		260634831B677CE3004C15C3 /* custom3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom3@2x.png"; sourceTree = "<group>"; };
+		260634841B677CE3004C15C3 /* custom4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom4@2x.png"; sourceTree = "<group>"; };
+		260634851B677CE3004C15C3 /* custom5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom5@2x.png"; sourceTree = "<group>"; };
 		266B12431B666BAD00D196B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		266B12451B666BB700D196B0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		39D7CC2BDCF7F9067B6AE11D /* Pods-HJShareMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJShareMenu_Tests/Pods-HJShareMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +103,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260634801B677C63004C15C3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				260634811B677CE3004C15C3 /* custom1@2x.png */,
+				260634821B677CE3004C15C3 /* custom2@2x.png */,
+				260634831B677CE3004C15C3 /* custom3@2x.png */,
+				260634841B677CE3004C15C3 /* custom4@2x.png */,
+				260634851B677CE3004C15C3 /* custom5@2x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +152,7 @@
 		6003F593195388D20070C39A /* Example for HJShareMenu */ = {
 			isa = PBXGroup;
 			children = (
+				260634801B677C63004C15C3 /* Resource */,
 				6003F59C195388D20070C39A /* HJAppDelegate.h */,
 				6003F59D195388D20070C39A /* HJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -257,7 +280,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				"zh-Hans",
 				"zh-Hant",
 			);
@@ -277,7 +299,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260634881B677CE3004C15C3 /* custom3@2x.png in Resources */,
+				2606348A1B677CE3004C15C3 /* custom5@2x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				260634861B677CE3004C15C3 /* custom1@2x.png in Resources */,
+				260634871B677CE3004C15C3 /* custom2@2x.png in Resources */,
+				260634891B677CE3004C15C3 /* custom4@2x.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

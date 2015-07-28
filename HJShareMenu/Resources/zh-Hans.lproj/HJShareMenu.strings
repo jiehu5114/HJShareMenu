@@ -1,0 +1,26 @@
+/* 
+  HJShareMenu.strings
+  HJShareMenu
+
+  Created by hujie on 15/7/27.
+  Copyright (c) 2015年 hujie. All rights reserved.
+*/
+
+"cancel"              = "取消";
+
+
+"Open in Safari"      = "Open in Safari";
+
+"Open in Maps"        = "Open in Maps";
+
+"Mail"                = "邮件";
+
+"Message"             = "Message";
+
+"Sina Weibo"          = "Sina Weibo";
+
+"Save to Camera Roll" = "Save to Camera Roll";
+
+"Twitter"             = "Twitter";
+
+"Facebook"            = "Facebook";

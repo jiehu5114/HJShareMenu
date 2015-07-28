@@ -49,7 +49,7 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 
 @property (nonatomic, strong) UIButton *cancelButton;
 
-@property (nonatomic, strong) UIView   *backgroundView;
+@property (nonatomic, strong) UIControl   *backgroundView;
 
 @property (nonatomic, strong) UIView   *seperateLine;
 
@@ -97,17 +97,14 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     
-    self.backgroundView  = [[UIView alloc] initWithFrame:keyWindow.frame];
+    self.backgroundView  = [[UIControl alloc] initWithFrame:keyWindow.frame];
     [self.backgroundView addSubview:self];
     self.backgroundView.backgroundColor = [UIColor colorWithRed:((float)((kBackgroundViewColor & 0xFF0000) >> 16)) / 255.0
                                                           green:((float)((kBackgroundViewColor & 0xFF00) >> 8)) / 255.0
                                                            blue:((float)(kBackgroundViewColor & 0xFF)) / 255.0 alpha:0];
     [keyWindow addSubview:self.backgroundView];
     
-    
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundViewDidTap:)];
-    [self.backgroundView addGestureRecognizer:singleTap];
-    
+    [self.backgroundView addTarget:self action:@selector(backgroundViewDidTap:) forControlEvents:UIControlEventTouchUpInside];
     
     //begin frame
     self.frame  = CGRectMake(0,
@@ -151,7 +148,7 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 
 
 #pragma mark  - Life Cycle
-- (void) buildLayout
+- (void)buildLayout
 {
     NSDictionary *viewsDic = @{@"_menuCollectionView":self.menuCollectionView,
                                @"self":self,
@@ -231,7 +228,7 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     
-    return CGSizeMake(keyWindow.frame.size.width, self.pageViewHeight);
+    return CGSizeMake(keyWindow.frame.size.width, self.menuCollectionView.frame.size.height);
 }
 
 
@@ -242,6 +239,10 @@ static const CGFloat kCancelButtonHeight          = 45.0;
     
     self.pageControl.currentPage = (self.menuCollectionView.contentOffset.x + pageWidth / 2) / pageWidth;
 }
+
+
+
+
 
 #pragma mark - HJShareMenuPageCellDelegate
 - (void)shareMenuPageCell:(HJShareMenuPageCell *)pageCell selectedAtIndex:(NSInteger)index
@@ -270,6 +271,32 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 }
 
 
+
+
+#pragma mark - Private          //check view in hierarchy
+- (BOOL)hj_isSubview:(UIView *)subview InViewHierarchy:(UIView *)view
+{
+    BOOL result = NO;
+    for (UIView *v in [view subviews])
+    {
+        if (v == subview)
+        {
+            return YES;
+        }
+        else
+        {
+            result = [self hj_isSubview:subview InViewHierarchy:v];
+            if (result)
+            {
+                return result;
+            }
+        }
+    }
+    return result;
+}
+
+
+
 #pragma mark - Property
 - (void)setMenuMode:(HJShareMenuMode)menuMode
 {
@@ -278,7 +305,7 @@ static const CGFloat kCancelButtonHeight          = 45.0;
         self.pageViewHeight = 130.0;
     }
     else {
-        self.pageViewHeight = 260.0;
+        self.pageViewHeight = 258.0;
         if (menuMode == SinglePageMode) {
             self.pageControl.hidden = YES;
         }

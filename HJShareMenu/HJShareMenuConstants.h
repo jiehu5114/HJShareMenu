@@ -10,7 +10,6 @@
 #define Pods_HJShareMenuConstants_h
 
 
-
 #define kHJShareMenuBundlePath  \
 ([[[NSBundle bundleForClass:[HJShareMenu class]] bundlePath] stringByAppendingPathComponent:@"HJShareMenu.bundle"])
 
@@ -18,8 +17,15 @@
 #define kHJShareMenuBundle  \
 ([NSBundle bundleWithPath:[[[NSBundle bundleForClass:[HJShareMenu class]] bundlePath] stringByAppendingPathComponent:@"HJShareMenu.bundle"]])
 
+
 #define kHJShareMenuLocalizedStrings(key)  \
-(NSLocalizedStringFromTableInBundle(key, @"HJShareMenu", kHJShareMenuBundle, nil))
+(NSLocalizedStringFromTableInBundle(key, @"HJShareMenu", [NSBundle bundleForClass:[HJShareMenu class]], nil))
+
+
+/*
+#define kHJShareMenuLocalizedStrings(key)  \
+(NSLocalizedStringFromTableInBundle(key, @"HJShareMenu", kHJShareMenuBundle, nil)
+ */
 
 
 #endif

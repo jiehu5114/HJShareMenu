@@ -27,11 +27,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+
+  s.source_files = 'HJShareMenu'
+  s.public_header_files = 'HJShareMenu/**/*.h'
+  s.resources = 'HJShareMenu/Resources/HJShareMenu.bundle','HJShareMenu/Resources/*.lproj'
 
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
-  s.resources = "Pod/HJShareMenu.bundle"
 
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

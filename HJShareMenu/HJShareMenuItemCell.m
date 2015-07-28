@@ -9,9 +9,11 @@
 #import "HJShareMenuItemCell.h"
 
 
-static const  CGFloat kMenuLabelMarginTop  = 10.0;
+static const  CGFloat kMenuLabelMarginTop  = 8.0;
 static const CGFloat kMenuLabelFontSize    = 12.0;
 static const NSInteger kMenuLabelTextColor = 0x646464;
+
+static const CGFloat kMenuItemButtonHeight = 60.0;
 
 
 @implementation HJShareMenuItemCell
@@ -34,9 +36,10 @@ static const NSInteger kMenuLabelTextColor = 0x646464;
     NSDictionary *viewsDic = @{@"_menuItemButton":self.menuItemButton,
                                @"_menuLabel":self.menuLabel};
     
-    NSDictionary *metrics  = @{@"kMenuLabelMarginTop":[NSNumber numberWithDouble:kMenuLabelMarginTop]};
+    NSDictionary *metrics  = @{@"kMenuLabelMarginTop":[NSNumber numberWithDouble:kMenuLabelMarginTop],
+                               @"kMenuItemButtonWidth":[NSNumber numberWithFloat:kMenuItemButtonHeight]};
     
-    NSString *vflV = @"V:|-0-[_menuItemButton]-kMenuLabelMarginTop-[_menuLabel]";
+    NSString *vflV = @"V:|-0-[_menuItemButton(kMenuItemButtonWidth)]-kMenuLabelMarginTop-[_menuLabel]";
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vflV
                                                                  options:0
                                                                  metrics:metrics
@@ -61,6 +64,14 @@ static const NSInteger kMenuLabelTextColor = 0x646464;
                                                                  relatedBy:NSLayoutRelationEqual
                                                                     toItem:self.menuLabel
                                                                  attribute:NSLayoutAttributeCenterX
+                                                                multiplier:1
+                                                                  constant:0]];
+    
+    [self.menuItemButton addConstraint:[NSLayoutConstraint constraintWithItem:self.menuItemButton
+                                                                 attribute:NSLayoutAttributeWidth
+                                                                 relatedBy:NSLayoutRelationEqual
+                                                                    toItem:self.menuItemButton
+                                                                 attribute:NSLayoutAttributeHeight
                                                                 multiplier:1
                                                                   constant:0]];
     

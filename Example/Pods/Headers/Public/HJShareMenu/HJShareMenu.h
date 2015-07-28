@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/HJShareMenu.h
+../../../../../HJShareMenu/HJShareMenu.h
