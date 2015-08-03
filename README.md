@@ -5,19 +5,25 @@
 
 ## Installation
 
+[CocoaPods](http://cocoapods.org) is the recommended way of installation, as this avoids including any binary files into your project.
+
+### CocoaPods (recommended)
+
 HJShareMenu is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following line to your [Podfile](http://cocoapods.org/#get_started) and run `pod install`.
 
 ```ruby
 pod "HJShareMenu"
 ```
- 
+
+### Manually
+
+Clone(`git clone git@github.com:jiehu5114/HJShareMenu.git`) or  Download [HJShareMenu](https://github.com/jiehu5114/HJShareMenu/archive/master.zip), then drag `HJShareMenu` subdirectory to your Project.
+
+
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-In your Project ,import HJShareMenu and implement HJShareMenuDelegate.
-
+In your Project,add `#import <HJShareMenu/HJShareMenu.h>` statement and implement HJShareMenuDelegate. As shown below:
 
 ```Objc
 HJShareMenuItem *mail = [[HJShareMenuItem alloc] init];
@@ -47,6 +53,12 @@ shareMenu.delegate = self;
 
 * Deployment Target iOS7.0+
 * ARC
+* AutoLayout
+
+
+## Contribute
+
+Please post any issues and ideas in the GitHub issue tracker and feel free to submit pull request with fixes and improvements. Keep in mind; a good pull request is small, well explained and should benifit most of the users.
 
 
 ## License
