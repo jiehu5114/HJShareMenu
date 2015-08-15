@@ -271,32 +271,6 @@ static const CGFloat kCancelButtonHeight          = 45.0;
 }
 
 
-
-
-#pragma mark - Private          //check view in hierarchy
-- (BOOL)hj_isSubview:(UIView *)subview InViewHierarchy:(UIView *)view
-{
-    BOOL result = NO;
-    for (UIView *v in [view subviews])
-    {
-        if (v == subview)
-        {
-            return YES;
-        }
-        else
-        {
-            result = [self hj_isSubview:subview InViewHierarchy:v];
-            if (result)
-            {
-                return result;
-            }
-        }
-    }
-    return result;
-}
-
-
-
 #pragma mark - Property
 - (void)setMenuMode:(HJShareMenuMode)menuMode
 {

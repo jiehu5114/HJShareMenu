@@ -27,6 +27,7 @@
 		670CC2352C255E8372464E67 /* Pods_HJShareMenu_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6114A14C1C3C78746C298235 /* Pods_HJShareMenu_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C75719588FBF27E77D9A0267 /* Pods_HJShareMenu_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011299C275F257F181820354 /* Pods_HJShareMenu_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E5E249FB1B7F95FD00C295F4 /* ShareMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E249FD1B7F95FD00C295F4 /* ShareMenu.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,6 @@
 		260634831B677CE3004C15C3 /* custom3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom3@2x.png"; sourceTree = "<group>"; };
 		260634841B677CE3004C15C3 /* custom4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom4@2x.png"; sourceTree = "<group>"; };
 		260634851B677CE3004C15C3 /* custom5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom5@2x.png"; sourceTree = "<group>"; };
-		266B12431B666BAD00D196B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		266B12451B666BB700D196B0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		39D7CC2BDCF7F9067B6AE11D /* Pods-HJShareMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJShareMenu_Tests/Pods-HJShareMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		53F77462F3A3E39FC898634E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HJShareMenu_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJShareMenu_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +73,9 @@
 		71B45813A03FED74AC587739 /* Pods-HJShareMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJShareMenu_Example/Pods-HJShareMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A94F0F65662CEBC812994869 /* Pods-HJShareMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJShareMenu_Example/Pods-HJShareMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E5E249FC1B7F95FD00C295F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareMenu.strings; sourceTree = "<group>"; };
+		E5E249FF1B7F961C00C295F4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ShareMenu.strings"; sourceTree = "<group>"; };
+		E5E24A001B7F961C00C295F4 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/ShareMenu.strings"; sourceTree = "<group>"; };
 		FC23EF03E92531C0B1CAF6B1 /* Pods-HJShareMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJShareMenu_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJShareMenu_Tests/Pods-HJShareMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 				6003F595195388D20070C39A /* HJShareMenu-Info.plist */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* HJShareMenu-Prefix.pch */,
+				E5E249FD1B7F95FD00C295F4 /* ShareMenu.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,7 +284,7 @@
 			knownRegions = (
 				en,
 				"zh-Hans",
-				"zh-Hant",
+				"zh-Hant-TW",
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -301,6 +304,7 @@
 			files = (
 				260634881B677CE3004C15C3 /* custom3@2x.png in Resources */,
 				2606348A1B677CE3004C15C3 /* custom5@2x.png in Resources */,
+				E5E249FB1B7F95FD00C295F4 /* ShareMenu.strings in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				260634861B677CE3004C15C3 /* custom1@2x.png in Resources */,
 				260634871B677CE3004C15C3 /* custom2@2x.png in Resources */,
@@ -446,10 +450,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				6003F5B9195388D20070C39A /* en */,
-				266B12431B666BAD00D196B0 /* zh-Hans */,
-				266B12451B666BB700D196B0 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E5E249FD1B7F95FD00C295F4 /* ShareMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E249FC1B7F95FD00C295F4 /* en */,
+				E5E249FF1B7F961C00C295F4 /* zh-Hans */,
+				E5E24A001B7F961C00C295F4 /* zh-Hant-TW */,
+			);
+			name = ShareMenu.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
     
+    NSString *str1 = (NSLocalizedStringFromTableInBundle(@"hj", @"str", [NSBundle bundleForClass:[HJViewController class]], nil));
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[HJShareMenu class]];
+    
+    NSString *str = (NSLocalizedStringFromTableInBundle(@"cancel", @"HJShareMenu", [NSBundle bundleForClass:[HJShareMenu class]], nil));
+    
     HJShareMenuItem *mail = [[HJShareMenuItem alloc] init];
     mail.menuItemTitle = kHJShareMenuLocalizedStrings(@"Mail");
     mail.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMail.png"]];
@@ -59,15 +65,15 @@
     /*custom Menu Item*/
     
     HJShareMenuItem *custom1 = [[HJShareMenuItem alloc] init];
-    custom1.menuItemTitle = @"custom1";
+    custom1.menuItemTitle = NSLocalizedStringFromTableInBundle(@"custom1", @"ShareMenu",[NSBundle mainBundle], nil);
     custom1.menuItemImage = [UIImage imageNamed:@"custom1.png"];
     
     HJShareMenuItem *custom2 = [[HJShareMenuItem alloc] init];
-    custom2.menuItemTitle = @"custom2";
+    custom2.menuItemTitle = NSLocalizedStringFromTableInBundle(@"custom2", @"ShareMenu",[NSBundle mainBundle], nil);
     custom2.menuItemImage = [UIImage imageNamed:@"custom2.png"];
     
     HJShareMenuItem *custom3 = [[HJShareMenuItem alloc] init];
-    custom3.menuItemTitle = @"custom3";
+    custom3.menuItemTitle = NSLocalizedStringFromTableInBundle(@"custom3", @"ShareMenu",[NSBundle mainBundle], nil);
     custom3.menuItemImage = [UIImage imageNamed:@"custom3.png"];
     
     self.menuItems = [NSMutableArray arrayWithObjects:mail,message,photos,safari,weibo,faceBook,twitter,custom1,custom2,custom3, nil];
