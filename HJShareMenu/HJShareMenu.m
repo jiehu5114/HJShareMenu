@@ -171,6 +171,15 @@ static const CGFloat kCancelButtonHeight          = 45.0;
                                                                  options:0
                                                                  metrics:metrics
                                                                    views:viewsDic]];
+
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.cancelButton
+                                                     attribute:NSLayoutAttributeLeft
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self.menuCollectionView
+                                                     attribute:NSLayoutAttributeLeft
+                                                    multiplier:1
+                                                      constant:0]];
+    
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.seperateLine
                                                                   attribute:NSLayoutAttributeWidth
@@ -179,6 +188,7 @@ static const CGFloat kCancelButtonHeight          = 45.0;
                                                                   attribute:NSLayoutAttributeWidth
                                                                  multiplier:1
                                                                    constant:0]];
+    
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControl
                                                      attribute:NSLayoutAttributeBottom
                                                      relatedBy:NSLayoutRelationEqual

@@ -27,12 +27,6 @@
 {
     [super viewDidLoad];
     
-    NSString *str1 = (NSLocalizedStringFromTableInBundle(@"hj", @"str", [NSBundle bundleForClass:[HJViewController class]], nil));
-    
-    NSBundle *bundle = [NSBundle bundleForClass:[HJShareMenu class]];
-    
-    NSString *str = (NSLocalizedStringFromTableInBundle(@"cancel", @"HJShareMenu", [NSBundle bundleForClass:[HJShareMenu class]], nil));
-    
     HJShareMenuItem *mail = [[HJShareMenuItem alloc] init];
     mail.menuItemTitle = kHJShareMenuLocalizedStrings(@"Mail");
     mail.menuItemImage = [UIImage imageWithContentsOfFile:[kHJShareMenuBundlePath stringByAppendingPathComponent:@"shareMail.png"]];
@@ -106,7 +100,7 @@
 #pragma mark - HJShareMenuDelegate
 - (void)hj_shareMenu:(HJShareMenu *)shareMenu selectedAtIndex:(NSInteger)index
 {
-    NSLog(@"选中：%ld",index);
+    NSLog(@"选中：%ld",(long)index);
     
 }
 

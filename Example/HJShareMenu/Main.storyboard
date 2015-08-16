@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn0-V2-xpf">
-                                <rect key="frame" x="15" y="70" width="75" height="30"/>
+                                <rect key="frame" x="15" y="107" width="75" height="30"/>
                                 <state key="normal" title="Share(&lt;=3)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qm-8x-51U">
-                                <rect key="frame" x="123" y="70" width="74" height="30"/>
+                                <rect key="frame" x="123" y="107" width="74" height="30"/>
                                 <state key="normal" title="Share(4~6)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-s6-A0d">
-                                <rect key="frame" x="229" y="70" width="66" height="30"/>
+                                <rect key="frame" x="229" y="107" width="66" height="30"/>
                                 <state key="normal" title="Sahre(&gt;6)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,7 +48,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9Qm-8x-51U" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="50" id="0aH-8a-2nj"/>
+                            <constraint firstItem="9Qm-8x-51U" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="87" id="0aH-8a-2nj"/>
                             <constraint firstItem="BCh-s6-A0d" firstAttribute="top" secondItem="9Qm-8x-51U" secondAttribute="top" id="5FU-ZP-hWw"/>
                             <constraint firstAttribute="centerX" secondItem="9Qm-8x-51U" secondAttribute="centerX" id="MSc-Ae-6XN"/>
                             <constraint firstItem="9Qm-8x-51U" firstAttribute="top" secondItem="bn0-V2-xpf" secondAttribute="top" id="PB1-Ir-d6v"/>
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="377"/>
+            <point key="canvasLocation" x="110" y="324"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
