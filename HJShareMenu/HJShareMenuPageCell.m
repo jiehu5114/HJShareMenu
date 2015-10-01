@@ -107,6 +107,7 @@ static NSString *const kShareMenuItemCellIdentifier = @"kShareMenuItemCellIdenti
         _pageCollectionView.backgroundColor = [UIColor clearColor];
         _pageCollectionView.delegate = self;
         _pageCollectionView.dataSource = self;
+        _pageCollectionView.scrollEnabled = NO;
         [_pageCollectionView registerClass:[HJShareMenuItemCell class] forCellWithReuseIdentifier:kShareMenuItemCellIdentifier];
         _pageCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
         [self.contentView addSubview:_pageCollectionView];

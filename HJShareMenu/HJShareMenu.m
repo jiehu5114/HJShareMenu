@@ -19,19 +19,13 @@ typedef enum : NSUInteger {
     MultiPageMode,
 } HJShareMenuMode;
 
-
+#define kSeperateLineThick  (1/[UIScreen mainScreen].scale)
 static NSString * const kShareMenuPageCellIdentifier = @"kHJShareMenuPageCellIdentifier";
-
 static const NSInteger kBackgroundViewColor       = 0x000000;
-
 static const CGFloat kAnimationDuration           = 0.4;
-
 static const CGFloat kBackgroundViewAlpha         = 0.6;
-
 static const  NSInteger kShareMenuBackgroundColor = 0xe1e3e4;
-static const  CGFloat   kSeperateLineThick        = 0.5;
 static const NSInteger kSeperateLineColor         = 0xc2c2c2;
-
 static const CGFloat   kCancelButtonFontSize      = 15.0;
 static const NSInteger kCancelButtonTextColor     = 0x323232;
 static const CGFloat kCancelButtonHeight          = 45.0;
